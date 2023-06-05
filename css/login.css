@@ -1,0 +1,462 @@
+@font-face {
+  font-family: "canon";
+  src: url("../font/CANON.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+body a {
+  color: #fff;
+}
+body #pcheader {
+  display: none;
+}
+body #mtheader header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 9;
+  transition: all 1s;
+}
+body #mtheader header.on {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+body #mtheader header .head {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body #mtheader header .head .hamburger {
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+body #mtheader header .head .hamburger p {
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.5s;
+}
+body #mtheader header .head .hamburger p.on:nth-child(1) {
+  transform: translateX(50px);
+  opacity: 0;
+}
+body #mtheader header .head .hamburger p.on:nth-child(2) {
+  transform: rotate(45deg);
+}
+body #mtheader header .head .hamburger p.on:nth-child(3) {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+body #mtheader header .head h1 {
+  font-family: "canon";
+  font-size: 24px;
+}
+body #mtheader header .head h1 span {
+  color: #cd2327;
+}
+body #mtheader header .head .search {
+  width: 20px;
+  margin-right: 15px;
+}
+body #mtheader header .hamsection {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 99;
+  display: none;
+}
+body #mtheader header .hamsection .topsec {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+body #mtheader header .hamsection .topsec .close {
+  width: 20px;
+  cursor: pointer;
+  position: relative;
+}
+body #mtheader header .hamsection .topsec .close p {
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+body #mtheader header .hamsection .topsec .close p:first-child {
+  position: absolute;
+}
+body #mtheader header .hamsection .topsec .close p:first-child.on {
+  transform: rotate(45deg);
+}
+body #mtheader header .hamsection .topsec .close p:last-child {
+  position: absolute;
+}
+body #mtheader header .hamsection .topsec .close p:last-child.on {
+  transform: rotate(-45deg);
+}
+body #mtheader header .hamsection .topsec .right {
+  margin-right: 50px;
+  margin-top: 20px;
+}
+body #mtheader header .hamsection .topsec .right a {
+  display: inline-block;
+  margin-left: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #cd2327;
+}
+body #mtheader header .hamsection .botsec {
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  position: fixed;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+body #mtheader header .hamsection .botsec a {
+  display: block;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+body #mtheader header .hamsection .botsec a:first-child {
+  border: 1px solid #fff;
+}
+body #mtheader header .hamsection .botsec a:last-child {
+  background-color: #cd2327;
+}
+body #mtheader header .hamsection .main_menu {
+  margin-top: 50px;
+}
+body #mtheader header .hamsection .main_menu .ham_main li {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 30px;
+}
+body #mtheader header .hamsection .main_menu .ham_main li a {
+  padding-left: 30px;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+body #mtheader header .hamsection .main_menu .ham_main li ul {
+  margin: 10px 20px;
+  width: 200px;
+}
+body #mtheader header .hamsection .main_menu .ham_main li ul li {
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+  width: 100%;
+  height: 40px;
+}
+body #mtheader header .hamsection .main_menu .ham_main li ul li a {
+  display: block;
+  line-height: 40px;
+}
+@media (min-width: 641px) and (max-width: 800px) {
+  body #mtheader header {
+    height: 60px;
+  }
+  body #mtheader header .head {
+    height: 60px;
+  }
+  body #mtheader header .head h1 {
+    font-size: 28px;
+  }
+  body #mtheader header .head .hamburger {
+    margin-left: 30px;
+  }
+  body #mtheader header .head .search {
+    margin-right: 30px;
+  }
+  body #mtheader header .hamsection .topsec {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  body #mtheader header .hamsection .topsec .right {
+    margin-left: 100px;
+  }
+  body #mtheader header .hamsection .topsec .right a {
+    margin-left: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #cd2327;
+  }
+  body #mtheader header .hamsection .botsec {
+    margin-bottom: 100px;
+  }
+  body #mtheader header .hamsection .botsec a {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+  }
+  body #mtheader header .hamsection .main_menu {
+    display: flex;
+    margin-top: 50px;
+  }
+  body #mtheader header .hamsection .main_menu .ham_main {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  body #mtheader header .hamsection .main_menu .ham_main li {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+  body #mtheader header .hamsection .main_menu .ham_main li a {
+    display: block;
+    padding: 0;
+  }
+  body #mtheader header .hamsection .main_menu .ham_main li ul {
+    width: 100%;
+    margin: 20px auto 0;
+  }
+  body #mtheader header .hamsection .main_menu .ham_main li ul li {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0;
+    width: 100%;
+  }
+  body #mtheader header .hamsection .main_menu .ham_main li ul li a {
+    display: block;
+  }
+}
+@media (min-width: 801px) {
+  body #mtheader {
+    display: none;
+  }
+  body #pcheader {
+    display: block;
+  }
+  body header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+    transition: top 0.5s;
+  }
+  body header.slide {
+    top: -50px;
+  }
+  body header .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  body header .inner .join {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  body header .inner .join a {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0px;
+    margin-bottom: 15px;
+  }
+  body header .inner .join a:hover::before {
+    content: url("../img/symbols_camera_wh.png");
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: -28px;
+  }
+  body header .inner .join a:hover::after {
+    width: 70px;
+  }
+  body header .inner .join a::after {
+    transition: all 0.5s;
+    display: block;
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #cd2327;
+  }
+  body header .inner .main_menu {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+  }
+  body header .inner .main_menu li {
+    width: 150px;
+    text-align: center;
+  }
+  body header .inner .main_menu li a {
+    display: block;
+  }
+  body header .inner .main_menu li a::after {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 1px;
+    background-color: #cd2327;
+    position: relative;
+    top: 4px;
+    left: 40px;
+    transition: all 0.5s;
+  }
+  body header .inner .main_menu li a:hover::after {
+    width: 70px;
+  }
+  body header .inner #pcsub {
+    display: flex;
+    padding: 20px 150px 20px 150px;
+    justify-content: space-between;
+  }
+  body header .inner #pcsub li {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  body header .inner #pcsub li a {
+    display: block;
+  }
+  body header .inner #pcsub li a:hover {
+    color: #888;
+  }
+  body header .inner .logo_banner {
+    width: 150px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid #cd2327;
+    border-top: none;
+    cursor: pointer;
+  }
+  body header .inner .logo_banner h1 {
+    line-height: 50px;
+    font-family: "canon";
+    font-size: 1.8rem;
+  }
+  body header .inner .logo_banner h1 span {
+    color: #cd2327;
+  }
+}
+body #form_box {
+  position: fixed;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+}
+body #form_box h2 {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  font-weight: bold;
+}
+body #form_box form {
+  width: 90%;
+  margin: 30px auto 0;
+}
+body #form_box form p {
+  width: 100%;
+  margin: 20px 0;
+}
+body #form_box form p input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: none;
+  padding-left: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+body #form_box form p input:focus {
+  color: #333;
+  font-size: 14px;
+  padding-left: 10px;
+}
+body #form_box form p.button {
+  margin-bottom: 50px;
+  width: 100%;
+}
+body #form_box form p.button input {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+body #form_box form p.add {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+body #form_box form p.add a {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+}
+body #form_box form p.remember {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 12px;
+}
+body #form_box form p.remember input {
+  width: 15px;
+}
+@media (min-width: 641px) and (max-width: 800px) {
+  body #form_box {
+    width: 60%;
+  }
+}
+@media (min-width: 801px) {
+  body #form_box {
+    width: 500px;
+  }
+}/*# sourceMappingURL=login.css.map */

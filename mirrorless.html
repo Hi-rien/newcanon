@@ -1,0 +1,388 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Charm:wght@700&family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/product.css">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script src="./js/jquery.mousewheel.min.js"></script>
+  <script defer src="./js/common.js"></script>
+  <script defer src="./js/mirrorless.js"></script>
+  <title>캐논코리아</title>
+</head>
+
+<body>
+
+  <article id="side">
+    <div id="quick">
+      <div class="quick_menu">
+        <a href="javascript:void(0)">
+          <img src="./img/ico_biz.png" alt="비즈몰">
+          <span>비즈몰</span>
+        </a>
+        <a href="javascript:void(0)">
+          <img src="./img/quickmenu-inquiry.svg" alt="1:1상담">
+          <span>1:1 상담</span>
+        </a>
+        <a href="javascript:void(0)">
+          <img src="./img/ico_kakao.svg" alt="카카오상담">
+          <span>카카오톡 상담</span>
+        </a>
+      </div>
+      <img src="./img/add-circle-red.png" alt="퀵메뉴 열기" class="add">
+    </div>
+  </article>
+  <div id="top">
+    <img src="./img/top_bk.png" alt="탑으로 이동">
+  </div>
+
+  <? include "mtheader.php"; ?>
+
+  <section id="mainbn">
+    <img class="banner" src="./img/eos_r5_img.jpg" alt="메인배너">
+    <div class="inner">
+      <img src="./img/eos_r5.png" alt="eos-r5" class="camera">
+      <div class="content">
+        <h2>미러리스</h2>
+        <p>간편한 휴대성과 강력한 성능</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mobile">
+
+    <div class="inner">
+      <div class="solidout">
+        <div id="check" class="on"></div>
+        <span>품절제품 제외</span>
+      </div>
+  
+      <section id="product">
+        <div class="topsec">
+          <p class="count">총<span>11</span>개</p>
+          <div class="select">
+            <div class="selected">
+              <span>전체</span>
+              <img src="./img/arrow-down.png" alt="더보기">
+            </div>
+            <div class="choice">
+              <span id="all">전체</span>
+              <span id="hot">인기상품</span>
+              <span id="new">최신상품</span>
+              <span id="max">높은가격순</span>
+              <span id="min">낮은가격순</span>
+            </div>
+          </div>
+        </div>
+  
+        <ul class="list">
+          <li class="item" data-list="hot">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r5.jpg" alt="eos-r5">
+              <div class="content">
+                <p class="name">EOS R5</p>
+                <p class="price">4,799,000원</p>
+                <span class="hot">HOT</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item soldout">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r3_soldout.jpg" alt="eos-r3">
+              <div class="content">
+                <p class="name">EOS R3</p>
+                <p class="price">7,099,000원</p>
+                <span class="soldout">일시품절</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item" data-list="hot">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r6-markll.jpg" alt="eos-r6-markll">
+              <div class="content">
+                <p class="name">EOS R6 Mark ll</p>
+                <p class="price">3,199,000원</p>
+                <span class="hot">HOT</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r7.jpg" alt="eos-r7">
+              <div class="content">
+                <p class="name">EOS R7</p>
+                <p class="price">1,799,000원</p>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item soldout">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r10.jpg" alt="eos-r10">
+              <div class="content">
+                <p class="name">EOS R10 (Body)</p>
+                <p class="price">1,129,000원</p>
+                <span class="soldout">일시품절</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-rp.jpg" alt="eos-rp">
+              <div class="content">
+                <p class="name">EOS RP (렌즈제외)</p>
+                <p class="price">1,249,000원</p>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item" data-list="hot">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r10-18_45.jpg" alt="eos-r10">
+              <div class="content">
+                <p class="name">EOS R10 18-45 KIT</p>
+                <p class="price">1,299,000원</p>
+                <span class="hot">HOT</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item soldout">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r7_18-150_soldout.jpg" alt="eos-r6-markll">
+              <div class="content">
+                <p class="name">EOS R7 18-150 KIT</p>
+                <p class="price">2,279,000원</p>
+                <span class="soldout">일시품절</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item soldout">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r10_18-150_soldout.jpg" alt="eos-r10">
+              <div class="content">
+                <p class="name">EOS R10 15-150 KIT</p>
+                <p class="price">1,609,000원</p>
+                <span class="soldout">일시품절</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item soldout">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r50-white_soldout.jpg" alt="eos-r50">
+              <div class="content">
+                <p class="name">EOS R50 18-45 KIT(white)</p>
+                <p class="price">1,199,000원</p>
+                <span class="soldout">일시품절</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item" data-list="new">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r8.jpg" alt="eos-r8">
+              <div class="content">
+                <p class="name">EOS R8 (Body)</p>
+                <p class="price">2,059,000원</p>
+                <span class="hot">NEW</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item" data-list="new">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r50-18_45.jpg" alt="eos-r50">
+              <div class="content">
+                <p class="name">EOS R50 18-45 KIT (black)</p>
+                <p class="price">1,199,000원</p>
+                <span class="hot">NEW</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item soldout">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-rp-24_105.jpg" alt="eos-rp">
+              <div class="content">
+                <p class="name">EOS RP 24-105 STM KIT</p>
+                <p class="price">1,649,000원</p>
+                <span class="soldout">일시품절</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r5-24_105.jpg" alt="eos-r5">
+              <div class="content">
+                <p class="name">EOS R5 24-105 KIT</p>
+                <p class="price">6,128,000원</p>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r6-markll-24_105.jpg" alt="eos-r6">
+              <div class="content">
+                <p class="name">EOS R6 24-105 USM</p>
+                <p class="price">4,528,000원</p>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item" data-list="new">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r50.jpg" alt="eos-r50">
+              <div class="content">
+                <p class="name">EOS R50 (Body)</p>
+                <p class="price">1,029,000원</p>
+                <span class="hot">NEW</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item soldout">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r8_24-50_soldout.jpg" alt="eos-r8">
+              <div class="content">
+                <p class="name">EOS R8 24-50 KIT</p>
+                <p class="price">2,324,000원</p>
+                <span class="soldout">일시품절</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+          <li class="item" data-list="hot">
+            <a href="javascript:void(0)">
+              <img src="./img/product/eos-r6-markll-24_105.jpg" alt="eos-r6-markll">
+              <div class="content">
+                <p class="name">EOS R6 Mark ll 24-105 STM</p>
+                <p class="price">3,599,000원</p>
+                <span class="hot">HOT</span>
+                <img src="./img/favorit.png" alt="찜" class="favorit">
+              </div>
+            </a>
+          </li>
+        </ul>
+  
+        <!-- <div class="more">
+          더보기
+        </div> -->
+      </section>
+    </div>
+  
+      <section class="bottom">
+        <ul class="gnb">
+          <li><a href="javascript:void(0)">매장안내</a></li>
+          <li><a href="javascript:void(0)">FAQ</a></li>
+          <li><a href="javascript:void(0)">공지사항</a></li>
+          <li><a href="javascript:void(0)">회사소개</a></li>
+          <li><a href="javascript:void(0)">매거진</a></li>
+          <li><a href="javascript:void(0)">임직원 인증</a></li>
+        </ul>
+  
+        <div class="inner">
+          <div class="sns">
+            <p>기업대표 / 복합기 / 프린터</p>
+            <div class="icon">
+              <img src="./img/youtube.svg" alt="youtube">
+              <img src="./img/facebook.svg" alt="facebook">
+              <img src="./img/blog.svg" alt="blog">
+            </div>
+            <p>카메라 / 렌즈</p>
+            <div class="icon">
+              <img src="./img/youtube.svg" alt="youtube">
+              <img src="./img/insta.svg" alt="insta">
+              <img src="./img/facebook.svg" alt="facebook">
+              <img src="./img/blog.svg" alt="blog">
+              <img src="./img/naverpost.png" alt="naverpost">
+              <img src="./img/kakao.svg" alt="kakao">
+              <img src="./img/twitter.svg" alt="twitter">
+            </div>
+          </div>
+        </div>
+  
+        <ul class="sitemap">
+          <li>
+            <span>Family Site</span>
+            <img src="./img/arrow-down.png" alt="arrow-down">
+            <ul class="subsite">
+              <li>Lotte Group</li>
+              <li>Canon Global</li>
+            </ul>
+          </li>
+          <li>
+            <span>캐논 관계사 Site</span>
+            <img src="./img/arrow-down.png" alt="arrow-down">
+            <ul class="subsite">
+              <li>캐논 메디칼 시스템즈 코리아</li>
+              <li>캐논 세미컨덕트 엔지니어링 코리아</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+  
+      <footer>
+        <div class="quick">
+          <span>이용약관</span>
+          <span>개인정보 처리방침</span>
+          <span>영상정보처리기기운영관리방침</span>
+        </div>
+        <p>캐논코리아 (주)</p>
+        <span>대표자 : 박정우, 혼마 토시오</span>
+        <span>사업자등록번호 : 120-81-15636</span>
+        <span>주소 : 서울특별시 강남구 테헤란로 607 (삼성동)</span>
+        <span>복합기 / 카메라 고객상담실 : 1533-3355</span>
+        <span class="copy">Copyright © CANON KOREA All Rights reserved</span>
+        <div class="footersite">
+          <img src="./img/img_footer_4.png" alt="ismsp">
+          <span>[인증범위] 캐논코리아 온라인 쇼핑몰 운영 (e스토어,비즈몰)<br>
+          [유효기간] 2022.10.19 ~ 2025.10.18
+          </span>
+        </div>
+        <ul class="footersite2">
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/img_footer_2.png" alt="가족친화 우수기업">
+              <span>가족친화 우수기업</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <img src="./img/img_footer_3.png" alt="소비자 중심 경영">
+              <span>소비자 중심 경영</span>
+            </a>
+          </li>
+        </ul>
+      </footer>  
+
+
+  </section>
+
+  <div id="pcsection">
+    <? include "pcheader.php"; ?>
+  </div>
+
+</body>
+
+</html>

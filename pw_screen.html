@@ -1,0 +1,88 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Charm:wght@700&family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script defer src="./js/common.js"></script>
+  <title>캐논코리아</title>
+
+  <style>
+    #check {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+
+  <script>
+    function search() {
+      id = document.member_form.id.value;
+      hp = document.member_form.hp.value;
+      text = $('#check')
+
+      $.post(
+        "pw_search.php", {
+          id: id,
+          hp: hp
+        },
+        function (data) {
+          if (data) {
+            text.text(data)
+          }
+        }
+      )
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <section id="mtheader">
+    <? include "mtheader.php"; ?>
+  </section>
+
+  <section id="pcsection">
+    <? include "pcheader.php"; ?>
+  </section>
+
+  <div id="form_box">
+    <h2>Password</h2>
+    <span id="check"></span>
+    <form action="pw_search.php" method="post" name="member_form">
+      <p>
+        <label for="id"></label><input type="text" name="id" id="id" placeholder="아이디를 입력하세요.">
+      </p>
+      <p>
+        <label for="hp"></label><input type="text" name="hp" id="hp" placeholder="전화번호를 입력하세요.">
+      </p>
+      <p class="button"><input type="button" value="검색" onclick="search()"></p>
+      <p class="add">
+        <a href="./join.html">회원가입</a>
+        <a href="id_screen.html">아이디 찾기</a>
+        <a href="pw_screen.html">비밀번호 찾기</a>
+      </p>
+    </form>
+  </div>
+
+
+</body>
+
+</html>
