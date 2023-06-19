@@ -78,7 +78,7 @@ body #mtsection header .hamsection {
   width: 100%;
   height: 100%;
   background-color: #000;
-  z-index: 99;
+  z-index: 999;
   display: none;
   color: #fff;
 }
@@ -130,7 +130,7 @@ body #mtsection header .hamsection .botsec {
   width: 100%;
   font-family: "Noto Sans KR", sans-serif;
   position: fixed;
-  bottom: 100px;
+  bottom: 200px;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -394,8 +394,7 @@ body #mtsection #product .detail_box {
   border-top: 8px solid #eee;
 }
 body #mtsection #product .detail_box .tab {
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
   height: 45px;
   display: flex;
   align-items: center;
@@ -403,6 +402,7 @@ body #mtsection #product .detail_box .tab {
   border-bottom: 1px solid #eee;
 }
 body #mtsection #product .detail_box .tab li {
+  width: 100%;
   text-align: center;
   line-height: 45px;
 }
@@ -411,7 +411,7 @@ body #mtsection #product .detail_box .tab li.active {
 }
 body #mtsection #product .detail_box .tab li a {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
 }
 body #mtsection #product .detail_box .contents {
   width: 95%;
@@ -433,6 +433,7 @@ body #mtsection .fixed_bottom {
   gap: 5px;
   border-radius: 20px 20px 0 0;
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 99;
 }
 body #mtsection .fixed_bottom .btn {
   height: 50px;
