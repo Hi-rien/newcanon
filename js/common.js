@@ -56,6 +56,20 @@ toTop.addEventListener('click', function () {
   })
 })
 
+// quick 메뉴
+
+$('.quick_menu').stop().hide()
+$('.add').click(function () {
+  if ($(this).siblings('.quick_menu').is(':visible')) {
+    $('.quick_menu').stop().slideUp()
+    $(this).attr('src', './img/add-circle-red.png')
+  } else {
+    $('.quick_menu').stop().slideDown()
+    $(this).attr('src', './img/minus-circle_red.png')
+  }
+})
+
+
 // 스크롤 이벤트
 window.addEventListener('scroll', function () {
   if (window.scrollY > 100) {

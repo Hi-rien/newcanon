@@ -1,0 +1,23 @@
+<svg id="구성_요소_1442_304" data-name="구성 요소 1442 – 304" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_16409" data-name="사각형 16409" transform="translate(1428 399)" style="fill:#fff;stroke:#666" d="M0 0h24v24H0z"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="사각형_16408" data-name="사각형 16408" transform="translate(-2.597 -3.405)" style="fill:#666" d="M0 0h25.809v23.128H0z"/>
+        </clipPath>
+        <clipPath id="clip-path-3">
+            <path id="사각형_16407" data-name="사각형 16407" style="fill:none" d="M0 0h23.242v23.128H0z"/>
+        </clipPath>
+        <style>
+            
+        </style>
+    </defs>
+    <g id="마스크_그룹_69358" data-name="마스크 그룹 69358" transform="translate(-1428 -399)" style="clip-path:url(#clip-path)">
+        <g id="그룹_70212" data-name="그룹 70212" transform="translate(1429.597 402.405)">
+            <g id="그룹_70211" data-name="그룹 70211" style="clip-path:url(#clip-path-2)">
+                <path id="패스_18552" data-name="패스 18552" d="M5.659 1.393a4.278 4.278 0 0 0-2.974 1.2A4.176 4.176 0 0 0 1.4 5.614a4.685 4.685 0 0 0 1.36 3.353l7.194 7.193a.7.7 0 0 0 .992 0l7.338-7.345a4.369 4.369 0 0 0 1.236-3.353 4.321 4.321 0 0 0-1.7-3.178 4.45 4.45 0 0 0-5.844.494l-1.041 1.073a.7.7 0 0 1-.992 0L8.757 2.665A4.379 4.379 0 0 0 5.685 1.4zm4.782 16.363a2.093 2.093 0 0 1-1.488-.614L1.761 9.949A6.079 6.079 0 0 1 0 5.585 5.631 5.631 0 0 1 5.685 0a5.625 5.625 0 0 1 4.058 1.673l.7.7.571-.572a5.86 5.86 0 0 1 7.68-.622 5.762 5.762 0 0 1 .568 8.63l-7.331 7.338a2.093 2.093 0 0 1-1.488.614z" style="fill:#999;stroke:#999"/>
+            </g>
+        </g>
+    </g>
+</svg>

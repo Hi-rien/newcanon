@@ -1,0 +1,261 @@
+<?
+  session_start();
+
+?>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CANON" />
+  <meta property="og:title" content="CANON KOREA" />
+  <meta property="og:description" content="개인 포트폴리오 페이지 입니다." />
+  <meta property="og:image" content="./canon.logo.png" />
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/detail.css">
+
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/jquery.cookie.js"></script>
+  <script defer src="./js/common.js"></script>
+  <script defer src="./js/product.js"></script>
+
+  <title>캐논코리아</title>
+</head>
+
+<body>
+
+  <div class="skip">
+    <a href="#mtheader">메뉴바로가기</a>
+    <a href="#mtsection">콘텐츠바로가기</a>
+  </div>
+
+  <section id="mtsection">
+    <? include "mtheader.php";?>
+
+    <article id="side">
+      <div id="quick">
+        <div class="quick_menu">
+          <a href="javascript:void(0)">
+            <img src="./img/ico_biz.png" alt="비즈몰">
+            <span>비즈몰</span>
+          </a>
+          <a href="javascript:void(0)">
+            <img src="./img/quickmenu-inquiry.svg" alt="1:1상담">
+            <span>1:1 상담</span>
+          </a>
+          <a href="javascript:void(0)">
+            <img src="./img/ico_kakao.svg" alt="카카오상담">
+            <span>카카오톡 상담</span>
+          </a>
+        </div>
+        <img src="./img/add-circle-red.png" alt="퀵메뉴 열기" class="add">
+      </div>
+    </article>
+
+    <div id="top">
+      <img src="./img/top_red.png" alt="탑으로 이동">
+    </div>
+
+
+
+    <section id="product">
+      <div class="inner">
+        <p class="sub">풀프레임 미러리스의 혁명</p>
+        <p class="name">EOS R5</p>
+        <div class="box">
+          <p class="price">4,799,000원</p>
+          <div class="icon">
+            <img src="./img/detail/heart_check_gray.svg" alt="좋아요">
+            <img src="./img/detail/ico_share.png" alt="공유하기">
+          </div>
+        </div>
+
+        <div class="slide_product"></div>
+      </div>
+
+      <div class="option_box">
+        <ul>
+          <li>
+            <p>
+              <span>할인쿠폰</span>
+              <img src="./img/detail/ico_qmark.png" alt="더보기">
+            </p>
+            <div class="coupon">
+              <span>쿠폰받기(3)</span>
+              <img src="./img/detail/ico_down.svg">
+            </div>
+          </li>
+          <li>
+            <p>
+              <span>무이자 할부</span>
+              <img src="./img/detail/ico_qmark.png" alt="더보기">
+            </p>
+          </li>
+          <li>
+            <p>배송정보</p>
+            <img src="./img/arrow-down.png" alt="더보기">
+          </li>
+          <li>
+            <p>평균배송일</p>
+            <img src="./img/arrow-down.png" alt="더보기">
+          </li>
+        </ul>
+      </div>
+
+      <div class="inner">
+        <div class="option_item">
+          <h3>구성품 (4)</h3>
+          <ul>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="./img/detail/eos-r5_01.jpg" alt="eos r5">
+                <p class="name">EOS R5</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="tit">사은품</div>
+                <img src="./img/detail/additem01.jpg" alt="cf express 128gb">
+                <p class="name">[6월 선착순 증정]CF Express 128GB</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="tit">기획전 선택 사은품</div>
+                <img src="./img/detail/additem02.jpg" alt="벤로 삼각대">
+                <p class="name">[세일즈 페스타] 벤로 SS101 삼각대</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="tit">기획적 선택 사은품</div>
+                <img src="./img/detail/additem03.jpg" alt="씨게이트 ssd-500gb">
+                <p class="name">[세일즈 페스타] 씨게이트 SSD_500GB</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="event_banner"></div>
+      </div>
+
+      <div class="detail_box">
+        <div class="inner">
+          <ul class="tab">
+            <li class="active"><a href="javascript:void(0)">제품특징</a></li>
+            <li><a href="javascript:void(0)">제품사양</a></li>
+            <li><a href="javascript:void(0)">액세서리</a></li>
+            <li><a href="javascript:void(0)">배송/취소/반품/교환</a></li>
+          </ul>
+
+          <div class="contents"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="fixed_bottom">
+      <div class="btn white"><span>장바구니</span></div>
+      <div class="btn bk"><span>구매하기</span></div>
+    </div>
+
+    <section class="bottom">
+      <ul class="gnb">
+        <li><a href="javascript:void(0)">매장안내</a></li>
+        <li><a href="javascript:void(0)">FAQ</a></li>
+        <li><a href="javascript:void(0)">공지사항</a></li>
+        <li><a href="javascript:void(0)">회사소개</a></li>
+        <li><a href="javascript:void(0)">매거진</a></li>
+        <li><a href="javascript:void(0)">임직원 인증</a></li>
+      </ul>
+
+      <div class="inner">
+        <div class="sns">
+          <p>기업대표 / 복합기 / 프린터</p>
+          <div class="icon">
+            <img src="./img/youtube.svg" alt="youtube">
+            <img src="./img/facebook.svg" alt="facebook">
+            <img src="./img/blog.svg" alt="blog">
+          </div>
+          <p>카메라 / 렌즈</p>
+          <div class="icon">
+            <img src="./img/youtube.svg" alt="youtube">
+            <img src="./img/insta.svg" alt="insta">
+            <img src="./img/facebook.svg" alt="facebook">
+            <img src="./img/blog.svg" alt="blog">
+            <img src="./img/naverpost.png" alt="naverpost">
+            <img src="./img/kakao.svg" alt="kakao">
+            <img src="./img/twitter.svg" alt="twitter">
+          </div>
+        </div>
+      </div>
+
+      <ul class="sitemap">
+        <li>
+          <span>Family Site</span>
+          <img src="./img/arrow-down.png" alt="arrow-down">
+          <ul class="subsite">
+            <li>Lotte Group</li>
+            <li>Canon Global</li>
+          </ul>
+        </li>
+        <li>
+          <span>캐논 관계사 Site</span>
+          <img src="./img/arrow-down.png" alt="arrow-down">
+          <ul class="subsite">
+            <li>캐논 메디칼 시스템즈 코리아</li>
+            <li>캐논 세미컨덕트 엔지니어링 코리아</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="quick">
+        <span>이용약관</span>
+        <span>개인정보 처리방침</span>
+        <span>영상정보처리기기운영관리방침</span>
+      </div>
+      <p>캐논코리아 (주)</p>
+      <span>대표자 : 박정우, 혼마 토시오</span>
+      <span>사업자등록번호 : 120-81-15636</span>
+      <span>주소 : 서울특별시 강남구 테헤란로 607 (삼성동)</span>
+      <span>복합기 / 카메라 고객상담실 : 1533-3355</span>
+      <span class="copy">Copyright © CANON KOREA All Rights reserved</span>
+      <div class="footersite">
+        <img src="./img/img_footer_4.png" alt="ismsp">
+        <span>[인증범위] 캐논코리아 온라인 쇼핑몰 운영 (e스토어,비즈몰)<br>
+        [유효기간] 2022.10.19 ~ 2025.10.18
+        </span>
+      </div>
+      <ul class="footersite2">
+        <li>
+          <a href="javascript:void(0)">
+            <img src="./img/img_footer_2.png" alt="가족친화 우수기업">
+            <span>가족친화 우수기업</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <img src="./img/img_footer_3.png" alt="소비자 중심 경영">
+            <span>소비자 중심 경영</span>
+          </a>
+        </li>
+      </ul>
+    </footer>  
+
+
+  </section>
+
+
+</body>
+
+</html>
