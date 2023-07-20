@@ -6,6 +6,7 @@
           if($_SESSION['userid']) {
           ?>
 
+          <a href="./index.html">홈</a>
           <?=$_SESSION['username']?> 님
           <a href="logout.php">로그아웃</a>
 
@@ -34,7 +35,7 @@
           <?
             } else {
           ?>
-
+          <a href="./index.html">홈</a>
           <a href="./login.html">로그인</a>
           <a href="./join.html">회원가입</a>
 
