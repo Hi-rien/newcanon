@@ -3,16 +3,24 @@
 // 햄버거 메뉴
 $('.hamburger').click(function () {
   $('.hamsection').stop().fadeIn()
-  $(this).children().addClass('on')
 
+  $(this).children().addClass('on')
   $('.close p').addClass('on')
+
+  $('body').css({
+    overflow: 'hidden'
+  })
 })
 
 $('.close').click(function () {
   $('.hamsection').stop().fadeOut()
-  $(this).children().removeClass('on')
 
+  $(this).children().removeClass('on')
   $('.hamburger p').removeClass('on')
+
+  $('body').css({
+    overflow: 'auto'
+  })
 })
 
 $('.ham_sub').stop().hide()

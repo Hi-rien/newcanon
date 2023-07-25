@@ -1,20 +1,20 @@
 
 // popup
 const popClose = document.querySelector('.pop_close')
-const pop = document.querySelector('.pop')
+const pop = document.querySelector('.popUp')
 
 popClose.addEventListener('click', function () {
   pop.style.display = 'none'
 })
 
-if($.cookie('stoppop') != 'no') { $('.pop').show()}
+if($.cookie('stoppop') != 'no') { $('.popUp').show()}
 
 
 $('.pop_day').on('click',function() {
   $.cookie('stoppop','no',{expires:1})
   // 가상의 이름, 가상 value, 일수
   // 클릭한 경우 쿠키의 value값을 no로 세팅
-  $('.pop').fadeOut('fast')
+  $('.popUp').fadeOut('fast')
 })
 
 

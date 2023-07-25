@@ -281,7 +281,7 @@ body {
   background-color: #000;
   color: #fff;
 }
-body .pop {
+body .popUp {
   position: fixed;
   top: 30%;
   left: 50%;
@@ -294,10 +294,10 @@ body .pop {
   box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.5);
   display: none;
 }
-body .pop p {
+body .popUp p {
   color: #fff;
 }
-body .pop .content {
+body .popUp .content {
   width: 80%;
   padding: 30px 0;
   text-align: justify;
@@ -305,23 +305,23 @@ body .pop .content {
   font-size: 0.9rem;
   margin: 0 auto;
 }
-body .pop .close_pop {
+body .popUp .close_pop {
   position: relative;
   width: 80%;
   height: 50px;
   margin: 0 auto;
   font-size: 0.8rem;
 }
-body .pop .pop_close,
-body .pop .pop_day {
+body .popUp .pop_close,
+body .popUp .pop_day {
   position: absolute;
   bottom: 30px;
   cursor: pointer;
 }
-body .pop .pop_close {
+body .popUp .pop_close {
   right: 0;
 }
-body .pop span {
+body .popUp span {
   font-family: "canon";
   display: block;
   color: #000;
